@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:muli;
+}
+
+.navbar{
+    background-color: #fff !important;
+}
+
+.navbar-brand{
+    font-size: 1.9rem !important;
+    color: #565387 !important;
+}
+
+.bd{
+    font-weight: bold; 
+}
+
+.fs-1{
+    font-size: 1.5rem !important;
+    font-weight: bold; 
+}
+
+.fs-2{
+    font-size: 1.2rem !important;
+}
+
+.zoom {
+    padding: 2px;
+    max-width: 350px;
+    max-height: 1000px;
+    transition: transform .6s; 
+    margin: 0 auto;
+  }
+
+  .zoom:hover {
+    transform: scale(1.1); 
+  }
+
+.brand-name{
+    font-size: 1.9rem !important;
+    color: #565387 !important;
+}
+
+.navbar a{
+    font-size: 1.3rem !important;
+    text-transform: capitalize;
+}
+
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+}
+
+.navbar a:hover{
+    color: #3498db !important;
+}
+
+.animated{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@media(max-width:991px){
+    .navbar-brand{
+        font-size: 1.5rem !important;
+    }
+
+    .menu_active{
+        font-weight: bold;
+        border-bottom: none 
+    }
+}
