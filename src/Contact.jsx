@@ -35,19 +35,19 @@ const Contact=()=>{
                         <form onSubmit={formSubmit}>
                             <div className="mb-3">
                                 <label for="" className="form-label">Full Name</label>
-                                <input type="text" name="fullname" value={data.fullname} onChange={InputEvent} className="form-control" placeholder="Enter Your Name" />
+                                <input type="text" name="fullname" value={data.fullname} onChange={InputEvent} className="form-control" placeholder="Enter Your Name" required />
                             </div>
                             <div className="mb-3">
                                 <label for="" className="form-label">Phone</label>
-                                <input type="number" name="phone" value={data.phone} onChange={InputEvent} className="form-control" placeholder="Enter Mobile Number" />
+                                <input type="number" name="phone" value={data.phone} onChange={InputEvent} className="form-control" placeholder="Enter Mobile Number" required />
                             </div>
                             <div className="mb-3">
                                 <label for="" className="form-label">Email</label>
-                                <input type="email" name="email" value={data.email} onChange={InputEvent} className="form-control" placeholder="Enter Email" />
+                                <input type="email" name="email" value={data.email} onChange={InputEvent} className="form-control" placeholder="Enter Email" required />
                             </div>
                             <div className="mb-3">
                                 <label for="" className="form-label">Message</label>
-                                <textarea name="msg" value={data.msg} onChange={InputEvent}  className="form-control" rows="3" placeholder="Enter Message"></textarea>
+                                <textarea name="msg" value={data.msg} onChange={InputEvent}  className="form-control" rows="3" placeholder="Enter Message" required></textarea>
                             </div>
                             <div className="col-12">
                                 <button className="btn btn-outline-primary" type="submit"> 
